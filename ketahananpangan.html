@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Agar website responsif di HP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ketahanan Pangan - PanganKita</title>
+
+    <style>
+        /* Mengatur tampilan dasar website */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fce7f3, #dbeafe);
+            color: #334155;
+            min-height: 100vh;
+            padding: 25px;
+        }
+
+        /* Bagian judul website */
+        header {
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            color: #2563eb;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+
+        /* Kotak konten utama */
+        .container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        /* Bagian penjelasan */
+        .intro {
+            background: #eff6ff;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            border-left: 5px solid #3b82f6;
+        }
+
+        h2 {
+            color: #db2777;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            line-height: 1.8;
+        }
+
+        /* Daftar tips */
+        .tips {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .tip-card {
+            background: #fdf2f8;
+            padding: 20px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .tip-card:hover {
+            transform: translateY(-5px);
+            background: #fce7f3;
+        }
+
+        .tip-card h3 {
+            color: #be185d;
+            margin-bottom: 10px;
+        }
+
+        .tip-card p {
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        /* Bagian tombol interaktif */
+        .fun-fact {
+            background: #dbeafe;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .fun-fact h2 {
+            color: #2563eb;
+        }
+
+        #hasilTips {
+            margin: 15px 0;
+            font-size: 16px;
+            line-height: 1.7;
+            font-weight: 500;
+            color: #1e40af;
+            min-height: 55px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #ec4899, #3b82f6);
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(59,130,246,0.3);
+        }
+
+        /* Bagian footer */
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* Tampilan khusus HP */
+        @media (max-width: 650px) {
+            body {
+                padding: 12px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .tips {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Judul utama website -->
+    <header>
+        <h1>🌱 PanganKita</h1>
+        <p>Belajar Menjaga Ketahanan Pangan untuk Masa Depan!</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Penjelasan singkat ketahanan pangan -->
+        <section class="intro">
+            <h2>🥗 Apa Itu Ketahanan Pangan?</h2>
+
+            <p>
+                Ketahanan pangan adalah kondisi ketika setiap orang
+                memiliki akses terhadap makanan yang cukup, aman,
+                bergizi, dan terjangkau untuk memenuhi kebutuhan hidup.
+                Ketahanan pangan sangat penting agar masyarakat
+                dapat hidup sehat dan sejahtera.
+            </p>
+        </section>
+
+        <!-- Daftar tiga tips -->
+        <section>
+            <h2>💡 3 Tips Menjaga Ketahanan Pangan</h2>
+
+            <div class="tips">
+
+                <div class="tip-card">
+                    <h3>🌾 1. Kurangi Limbah Makanan</h3>
+                    <p>
+                        Ambil makanan secukupnya dan jangan
+                        membuang makanan yang masih layak konsumsi.
+                    </p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>🌱 2. Dukung Petani Lokal</h3>
+                    <p>
+                        Belilah produk pertanian lokal untuk
+                        membantu perekonomian petani Indonesia.
+                    </p>
+                </div>
+
+                <div class="tip-card">
+                    <h3>💧 3. Jaga Sumber Daya Alam</h3>
+                    <p>
+                        Hemat penggunaan air, jaga kesuburan tanah,
+                        dan lindungi lingkungan.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tombol JavaScript interaktif -->
+        <section class="fun-fact">
+
+            <h2>✨ Tahukah Kamu?</h2>
+
+            <p id="hasilTips">
+                Klik tombol di bawah untuk menemukan
+                fakta menarik tentang ketahanan pangan!
+            </p>
+
+            <button onclick="tampilkanTips()">
+                Tahukah Kamu? 💡
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- Footer website -->
+    <footer>
+        <p>© 2026 PanganKita | Edukasi Ketahanan Pangan</p>
+        <p>Belajar Hari Ini, Menjaga Pangan untuk Masa Depan 🌍</p>
+    </footer>
+
+    <script>
+        // Menyimpan kumpulan fakta dan tips
+        // yang akan ditampilkan ketika tombol diklik.
+        const daftarTips = [
+            "🌽 Jagung, singkong, dan sagu merupakan sumber karbohidrat selain beras. Yuk, kenali pangan lokal Indonesia!",
+
+            "🥬 Menanam sayuran sendiri di rumah dapat membantu memenuhi kebutuhan pangan keluarga.",
+
+            "🍚 Mengambil nasi secukupnya merupakan salah satu cara sederhana untuk mengurangi pemborosan makanan.",
+
+            "🌳 Lingkungan yang sehat dan tanah yang subur membantu menghasilkan bahan pangan berkualitas.",
+
+            "🐟 Indonesia memiliki sumber daya laut yang kaya dan dapat menjadi sumber protein bagi masyarakat.",
+
+            "💧 Menghemat air sangat penting karena pertanian membutuhkan air untuk menghasilkan bahan pangan.",
+
+            "🧑‍🌾 Membeli hasil panen petani lokal dapat membantu meningkatkan kesejahteraan petani."
+        ];
+
+        // Variabel untuk menyimpan tips yang terakhir muncul.
+        let tipsTerakhir = -1;
+
+        // Fungsi yang dijalankan ketika tombol diklik.
+        function tampilkanTips() {
+
+            let nomorAcak;
+
+            // Memilih angka acak yang berbeda dari sebelumnya.
+            do {
+                nomorAcak = Math.floor(
+                    Math.random() * daftarTips.length
+                );
+            } while (nomorAcak === tipsTerakhir);
+
+            // Menyimpan nomor tips yang baru muncul.
+            tipsTerakhir = nomorAcak;
+
+            // Menampilkan tips ke halaman website.
+            document.getElementById("hasilTips").textContent =
+                daftarTips[nomorAcak];
+        }
+    </script>
+
+</body>
+</html>
